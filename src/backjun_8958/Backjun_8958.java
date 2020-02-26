@@ -1,14 +1,15 @@
 //========================
-//OX퀴즈 결과 점수
-//첫 줄에 테스트 개수
-//테스트 개수 만큼의 테스트결과 입력 , 각 줄의 테스트 결과 점수 출력
-//"OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점
+// 2020년 02월 25일
+// OX퀴즈 결과 점수
+// 첫 줄에 테스트 개수(N) 입력.
+// 테스트 개수 만큼의 테스트결과 입력 , 각 줄의 테스트 결과 점수 출력
+// "OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점
 //========================
 
 package backjun_8958;
 import java.util.*;
 
-public class backjun_8958 {
+public class Backjun_8958 {
 	
     public static void main(String args[]){
         Scanner input = new Scanner(System.in);
