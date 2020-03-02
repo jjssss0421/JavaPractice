@@ -23,7 +23,7 @@ public class Backjun_14719{
 			}
 		}
 		
-		int cnt=0;
+		int cnt=0; 
 		int tmp;
 		boolean flag = false;
 		int k=0;
