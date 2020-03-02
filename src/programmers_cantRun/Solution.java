@@ -1,22 +1,24 @@
 package programmers_cantRun;
+import java.util.*;
 
 public class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
+        HashMap<String, Integer> hm = new HashMap();
         
-        for(int i=0; i<participant.length; i++){
-            boolean flag=false;
-            for(int j=0; j<completion.length; j++){
-                if(participant[i].equals(completion[j])){
-                    flag=true;
-                    completion[j]="";
-                }
-            }
-            if(flag==false){
-                answer=participant[i];
-                break;
+        for(String part : participant){
+            hm.put(part, hm.getOrDefault(part, 0)+1);
+        }
+        for(String comp : completion){
+            hm.put(comp, hm.get(comp)-1);
+        }
+        for(String key : hm.keySet()){
+            if(hm.get(key)!=0){
+                answer= key;
             }
         }
+        
+     
         return answer;
     }
 }
