@@ -25,15 +25,14 @@ public class Backjun_14719{
 		
 		int cnt=0; 
 		int tmp;
-		boolean flag = false;
 		int k=0;
 		for(int i=0; i<rain.length; i++) {
-			int j=k;
-			for(; j<rain[0].length; j++) {
-				if(rain[i][j]==1) {
-					for(; k<rain[0].length; k++) {
-						cnt++;
-						if(rain[i][k]==1) break;
+			int j=0;
+			for(j=k; j<rain[0].length; j++) {
+				if(rain[i][j]==1 && rain[i][j+1]==0) {
+					for(k=j+1; k<rain[0].length; k++) {
+						if(rain[i][k]==0) cnt++;
+						else if(rain[i][k]==1) break;
 					}
 				}
 			}
