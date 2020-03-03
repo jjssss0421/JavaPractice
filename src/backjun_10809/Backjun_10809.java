@@ -29,5 +29,13 @@ public class Backjun_10809{
 		}
 		
 		
+		
+		// 간결코드
+		//String S=new java.util.Scanner(System.in).next();
+		//int i=97;
+		//while(i<123)System.out.print(S.indexOf(i++)+" ");   //indexOf() : 문자열의 위치 리턴. 없으면 -1 리턴.
+		
+		
+		
 	}
 }
