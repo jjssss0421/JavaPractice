@@ -24,27 +24,28 @@ public class Backjun_14719{
 		}
 		
 		int cnt=0; 
-		int tmp;
-		int k=0;
+		int tmp=0;
 		for(int i=0; i<rain.length; i++) {
 			int j=0;
-			for(j=k; j<rain[0].length; j++) {
-				if(rain[i][j]==1 && rain[i][j+1]==0) {
-					for(k=j+1; k<rain[0].length; k++) {
-						if(rain[i][k]==0) cnt++;
-						else if(rain[i][k]==1) break;
-					}
-				}
+			int k=rain[0].length-1;
+			for(;  j<rain[0].length; j++) {
+				if(rain[i][j]==1) break;
+			}
+			for(; k>=0; k--) {
+				if(rain[i][k]==1) break;
+			}
+			for(int l=j; l<=k; l++) {
+				if(rain[i][l]==0) cnt++;
 			}
 			System.out.println(i+" "+cnt);
 		}
 
-		for(int i=0; i<rain.length; i++) {
-			for(int j=0; j<rain[0].length; j++) {
-				System.out.print(rain[i][j]+" ");
-			}
-			System.out.println();
-		}
+//		for(int i=0; i<rain.length; i++) {
+//			for(int j=0; j<rain[0].length; j++) {
+//				System.out.print(rain[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
 		
 		
 		System.out.println(cnt);
