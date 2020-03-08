@@ -6,10 +6,10 @@
 // answer = ?O?    (library 에 없으면 ?출력)
 //========================
 
-package test2;
+package decode;
 import java.util.*;
 
-public class Test2{
+public class Decode{
 	public static void main(String args[]) {
 		
 		String[] library = {"O ---","S ..."};

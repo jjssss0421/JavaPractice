@@ -6,10 +6,10 @@
 // ex) arr=[27, 0, 0, 0, 0, 9], num=9  -> day=4
 //========================
 
-package test;
+package needDay;
 import java.util.*;
 
-public class Test{
+public class NeedDay{
 	public static void main(String args[]) {
 
 		
